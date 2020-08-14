@@ -1,0 +1,32 @@
+;=====================================================
+;     File Includes
+;=====================================================
+
+[section/base]
+include-file = ~/.config/polybar/master.conf
+include-file = ~/.config/polybar/modules.conf
+
+
+;=====================================================
+;     i3 Bars
+;=====================================================
+
+[bar/eDP1]
+inherit = bar/master
+
+; Use $ xrandr -q | grep " connected" | cut -d ' ' -f1
+monitor = ${env:MONITOR:eDP-1}
+
+modules-left   = i3 
+modules-center = xwindow
+modules-right  = coreuse memory battery volume clock menu
+
+[bar/HDMI1]
+inherit = bar/master
+
+; Use $ xrandr -q | grep " connected" | cut -d ' ' -f1
+monitor = ${env:MONITOR:HDMI-1}
+
+modules-left   = i3 
+modules-center = clock
+modules-right  = coreuse memory battery volume menu

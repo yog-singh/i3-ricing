@@ -2,7 +2,7 @@
 rofi.font:              Cantarell Regular 11
 rofi.modi:              ssh,window,run,drun
 rofi.width:             38
-rofi.lines:             7
+rofi.lines:             10
 rofi.columns:           1
 rofi.opacity:           100
 
